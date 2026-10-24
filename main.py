@@ -1,6 +1,9 @@
 import asyncio
 import os
 
+from dotenv import load_dotenv
+load_dotenv()
+
 from schemas import ChatMessage, LLMConfig, Provider
 from clients.openai_client import OpenAIClient
 from clients.anthropic_client import AnthropicClient
